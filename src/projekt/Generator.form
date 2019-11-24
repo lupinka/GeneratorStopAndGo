@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="projekt.Generator">
-  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="19" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="19" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="564" height="868"/>
+      <xy x="20" y="20" width="1185" height="953"/>
     </constraints>
     <properties>
       <background color="-16020382"/>
@@ -363,12 +363,118 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="5" use-parent-layout="false"/>
         </constraints>
       </hspacer>
+      <grid id="d26b8" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="4" row-span="3" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-8292961"/>
+          <font size="24"/>
+        </properties>
+        <border type="none" title="Szyfrator"/>
+        <children>
+          <component id="f487f" class="javax.swing.JRadioButton" binding="szyfrowanieNaEkranRadioButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8292961"/>
+              <font size="24"/>
+              <text value="Szyfrowanie na ekran"/>
+            </properties>
+          </component>
+          <component id="59700" class="javax.swing.JRadioButton" binding="szyfrowanieDoPlikuRadioButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-8292961"/>
+              <font size="24"/>
+              <text value="Szyfrowanie do pliku"/>
+            </properties>
+          </component>
+          <component id="dd4f7" class="javax.swing.JTextField" binding="SzyfratorOutputPath">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="24"/>
+            </properties>
+          </component>
+          <component id="f786c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Scieżka do zaszyfrowanego pliku"/>
+            </properties>
+          </component>
+          <component id="b6d4b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Sciezka do pliku z  tekstem"/>
+            </properties>
+          </component>
+          <component id="8fa80" class="javax.swing.JTextField" binding="TextPath">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="24"/>
+            </properties>
+          </component>
+          <component id="eed14" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Wynik"/>
+            </properties>
+          </component>
+          <component id="e0f6" class="javax.swing.JTextArea" binding="SzyfratorWynik">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="1e204" class="javax.swing.JButton" binding="Szyfruj">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="24"/>
+              <text value="Szyfruj"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <hspacer id="bce21">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="5" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
     </children>
   </grid>
   <buttonGroups>
     <group name="zapis">
       <member id="bab5"/>
       <member id="8e346"/>
+    </group>
+    <group name="SzyfrowanieZapis">
+      <member id="f487f"/>
+      <member id="59700"/>
     </group>
   </buttonGroups>
 </form>
